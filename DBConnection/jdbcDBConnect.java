@@ -15,7 +15,7 @@ public class jdbcDBConnect {
             System.out.println("Sucessful "+con);
         }catch (Exception e){
 
-            System.out.println("Database not found!!");
+            System.out.println(e.getMessage());
         }
 
 

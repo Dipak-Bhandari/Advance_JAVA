@@ -12,7 +12,6 @@ public class CRUDoperations {
     public static final String user = "NewUser";
     public static final String  psd= "1234!!";
 
-
     public static void main(String[] args) throws Exception{
         try ( Connection con = DriverManager.getConnection(sqlURL,user,psd);
               Statement statement= con.createStatement();
@@ -26,12 +25,9 @@ public class CRUDoperations {
                     " PRIMARY KEY ( id ))";
 
             statement.executeUpdate(sql);
-
             System.out.println(" Tables created in "+db);
-
         }catch (SQLException e){
             e.printStackTrace();
         }
-
     }
 }
